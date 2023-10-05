@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Radiobuttons</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
@@ -18,22 +18,35 @@
 
       <main>
         <div class="heading">
-          <h1>Share your thoughts</h1>
+          <h1>Select your best movies</h1>
         </div>
         <form
-          class="form_box"
+          class="radiobtn_box"
           action="https://httpbin.org/anything"
           method="post"
         >
-          <div class="mailbox">
-            <label for="email" class="labeltext">Enter email</label>
-            <input id="email" type="email" name="email" required />
-          </div>
+          <input type="radio" id="action" name="movie" value="Action" />
+          <label for="action">ACTION MOVIES</label>
 
-          <div class="msg_box">
-            <label for="msg" class="labeltext">Share your thought below</label>
-            <textarea id="msg" name="message"></textarea>
-          </div>
+          <input type="radio" id="comedy" name="movie" value="Comedy" />
+          <label for="comedy">COMEDY MOVIES</label>
+
+          <input type="radio" id="romance" name="movie" value="Romance" />
+          <label for="romance">ROMANTIC MOVIES</label>
+
+          <input type="radio" id="horror" name="movie" value="Horror" />
+          <label for="horror">HORROR MOVIES</label>
+
+          <input type="radio" id="thriller" name="movie" value="Thriller" />
+          <label for="thriller">THRILLER MOVIES</label>
+
+          <input
+            type="radio"
+            id="documentaries"
+            name="movie"
+            value="Documentaries"
+          />
+          <label for="documentaries">DOCUMENTARY MOVIES</label>
 
           <div class="btn_box">
             <button type="submit">Send</button>
