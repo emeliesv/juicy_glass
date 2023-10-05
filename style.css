@@ -1,0 +1,60 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.main_grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 10vh 70vh 20vh;
+  background-color: rgb(247, 205, 212);
+  width: 100%;
+}
+
+header {
+  background-color: plum;
+  grid-column: span 3;
+}
+
+main {
+  grid-column: span 3;
+  background-color: rgb(244, 146, 162);
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.heading {
+  grid-column: span 3;
+  text-align: center;
+}
+
+.form_box {
+  background-color: purple;
+  grid-area: 2 / 2 / span 4 / span 2;
+  display: grid;
+  align-content: center;
+  justify-content: center;
+}
+
+.mailbox,
+.msg_box {
+  display: grid;
+  justify-content: center;
+}
+
+.about_me {
+  background-color: rgb(255, 218, 185);
+  grid-area: 2 / 1 / span 4 / span 1;
+}
+
+footer {
+  grid-column: span 3;
+  background-color: plum;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.logo_img {
+  grid-area: 2 / 4;
+}

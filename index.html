@@ -6,5 +6,53 @@
     <title>Document</title>
     <link rel="stylesheet" href="style.css" />
   </head>
-  <body></body>
+  <body>
+    <div class="main_grid">
+      <header>
+        <nav>
+          <a href="#">Write Message</a>
+          <a href="#">Add radioselection</a>
+          <a href="#">Select Dropdown</a>
+        </nav>
+      </header>
+
+      <main>
+        <div class="heading">
+          <h1>Share your thoughts</h1>
+        </div>
+        <form
+          class="form_box"
+          action="https://httpbin.org/anything"
+          method="post"
+        >
+          <div class="mailbox">
+            <label for="email">Enter email</label>
+            <input id="email" type="email" name="email" required />
+          </div>
+
+          <div class="msg_box">
+            <label for="msg">Share your thought below</label>
+            <textarea id="msg" name="message"></textarea>
+          </div>
+
+          <div class="btn_box">
+            <button type="submit">Send</button>
+          </div>
+        </form>
+
+        <div class="about_me">
+          <h2>About me</h2>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facilis
+            repellat velit, possimus illum eius omnis?
+          </p>
+        </div>
+      </main>
+
+      <footer>
+        <h2>Footer-heading</h2>
+        <img class="logo_img" src="" alt="logo" />
+      </footer>
+    </div>
+  </body>
 </html>
