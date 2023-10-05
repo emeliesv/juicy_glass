@@ -55,9 +55,9 @@ main {
   justify-content: center;
 }
 
-.radiobtn_box {
-  background-color: purple;
-  grid-area: 2 / 2 / span 4 / span 2;
+.radio_box {
+  margin: 2%;
+  width: 100%;
 }
 
 .mailbox,
@@ -71,6 +71,11 @@ main {
 .labeltext {
   margin-bottom: 5%;
 }
+
+form label {
+  font-variant: small-caps;
+}
+
 .about_me {
   background-color: rgb(255, 218, 185);
   grid-area: 2 / 1 / span 4 / span 1;
